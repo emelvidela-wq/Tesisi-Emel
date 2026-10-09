@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class ZonaPunto : MonoBehaviour
@@ -8,22 +9,23 @@ public class ZonaPunto : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip sonidoSilbato;
 
-    private GameManager gameManager;
+    private gameManager gameManager;
 
     void Start()
     {
-        gameManager = FindFirstObjectByType<GameManager>();
+        gameManager = FindFirstObjectByType<gameManager>();
 
         if (audioSource == null)
-        {
             audioSource = GetComponent<AudioSource>();
-        }
 
         if (audioSource != null)
         {
             audioSource.playOnAwake = false;
             audioSource.loop = false;
         }
+
+        if (gameManager == null)
+            Debug.LogError("No se encontró gameManager en la escena.");
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -31,20 +33,15 @@ public class ZonaPunto : MonoBehaviour
         if (!other.CompareTag("Pelota"))
             return;
 
-        // SONIDO DEL SILBATO
         if (audioSource != null && sonidoSilbato != null)
-        {
             audioSource.PlayOneShot(sonidoSilbato);
-            Debug.Log("📢 ¡Silbato! ¡Punto!");
-        }
+
+        if (gameManager == null)
+            return;
 
         if (ladoJugador)
-        {
             gameManager.PuntoBot();
-        }
         else
-        {
             gameManager.PuntoJugador();
-        }
     }
 }

@@ -1,276 +1,133 @@
+
 using UnityEngine;
-using System.Collections;
-using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class gameManager : MonoBehaviour
 {
-    [Header("Pelota")]
-    public Rigidbody2D pelota;
+    [Header("Marcadores de vidas")]
+    public MarcadorVidasDrake marcadorDrake;
+    public MarcadorVidasLuke marcadorLuke;
 
-    [Header("Saques")]
-    public Transform saqueJugador;
-    public Transform saqueBot;
+    [Header("Introducción del entrenador")]
+    public GameObject entrenadorSquare;
+    public SpriteRenderer spriteEntrenador;
+    public Sprite[] spritesIntroduccion = new Sprite[8];
 
-    [Header("Jugadores")]
-    public Transform jugador;
-    public Transform bot;
+    private int indiceDialogo = 0;
+    private bool introduccionActiva = true;
+    private float escalaTiempoOriginal;
 
-    [Header("Posiciones iniciales")]
-    public Transform inicioJugador;
-    public Transform inicioBot;
-
-    [Header("Tiempo de respawn")]
-    public float tiempoRespawn = 1f;
-
-    [Header("Regla de los 3 toques")]
-    public int maximoToques = 3;
-
-    [Header("Red")]
-    public float posicionRed = -329.89f;
-
-    [Header("Marcador del jugador")]
-    public SpriteRenderer marcadorJugador;
-    public Sprite[] spritesMarcadorJugador;
-
-    private int puntosJugador = 0;
-
-    [Header("Marcador del bot")]
-    public SpriteRenderer marcadorBot;
-    public Sprite[] spritesMarcadorBot;
-
-    private int puntosBot = 0;
-
-    private int toquesJugador = 0;
-    private int toquesBot = 0;
-
-    private bool pelotaEnLadoJugador;
-    private bool puntoEnProceso = false;
-
-    void Start()
+    void Awake()
     {
-        // Determinamos inicialmente de qué lado está la pelota
-        pelotaEnLadoJugador = pelota.transform.position.x < posicionRed;
+        escalaTiempoOriginal = Time.timeScale;
 
-        // Comenzamos mostrando 00
-        ActualizarMarcadorJugador();
-        ActualizarMarcadorBot();
+        if (entrenadorSquare != null)
+        {
+            if (spriteEntrenador == null)
+                spriteEntrenador =
+                    entrenadorSquare.GetComponent<SpriteRenderer>();
+
+            entrenadorSquare.SetActive(true);
+        }
+
+        indiceDialogo = 0;
+        MostrarDialogo();
+
+        // Pausar el juego durante toda la introducción.
+        Time.timeScale = 0f;
     }
 
     void Update()
     {
-        if (puntoEnProceso)
+        if (!introduccionActiva)
             return;
 
-        ActualizarLadoPelota();
-    }
-
-    // ==========================================
-    // DETECTAR CUANDO LA PELOTA CAMBIA DE LADO
-    // ==========================================
-
-    void ActualizarLadoPelota()
-    {
-        bool ladoActual = pelota.transform.position.x < posicionRed;
-
-        if (ladoActual != pelotaEnLadoJugador)
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            pelotaEnLadoJugador = ladoActual;
-
-            if (pelotaEnLadoJugador)
-            {
-                toquesJugador = 0;
-
-                Debug.Log("La pelota pasó al jugador. Toques reiniciados.");
-            }
-            else
-            {
-                toquesBot = 0;
-
-                Debug.Log("La pelota pasó al bot. Toques reiniciados.");
-            }
+            AvanzarDialogo();
         }
     }
 
-    // ==========================================
-    // TOQUE DEL JUGADOR
-    // ==========================================
-
-    public void ToqueJugador()
+    void MostrarDialogo()
     {
-        if (puntoEnProceso)
+        if (spriteEntrenador == null)
+        {
+            Debug.LogError(
+                "Asigná el Sprite Renderer del Square del entrenador."
+            );
             return;
-
-        toquesJugador++;
-
-        Debug.Log("Toques del jugador: " + toquesJugador);
-
-        if (toquesJugador > maximoToques)
-        {
-            Debug.Log("¡FALTA! El jugador hizo 4 toques.");
-
-            PuntoBot();
         }
-    }
 
-    // ==========================================
-    // TOQUE DEL BOT
-    // ==========================================
-
-    public void ToqueBot()
-    {
-        if (puntoEnProceso)
+        if (spritesIntroduccion == null ||
+            spritesIntroduccion.Length != 8)
+        {
+            Debug.LogError(
+                "Asigná los 8 sprites de la introducción en GameManager3."
+            );
             return;
+        }
 
-        toquesBot++;
+        spriteEntrenador.sprite =
+            spritesIntroduccion[indiceDialogo];
+    }
 
-        Debug.Log("Toques del bot: " + toquesBot);
+    void AvanzarDialogo()
+    {
+        indiceDialogo++;
 
-        if (toquesBot > maximoToques)
+        if (indiceDialogo < spritesIntroduccion.Length)
         {
-            Debug.Log("¡FALTA! El bot hizo 4 toques.");
-
-            PuntoJugador();
+            MostrarDialogo();
+        }
+        else
+        {
+            FinalizarIntroduccion();
         }
     }
 
-    // ==========================================
-    // PUNTO PARA EL JUGADOR
-    // ==========================================
-
-    public void PuntoJugador()
+    void FinalizarIntroduccion()
     {
-        if (puntoEnProceso)
-            return;
+        introduccionActiva = false;
 
-        puntoEnProceso = true;
+        if (entrenadorSquare != null)
+            entrenadorSquare.SetActive(false);
 
-        // Sumar punto al jugador
-        if (puntosJugador < 4)
-        {
-            puntosJugador++;
+        Time.timeScale = escalaTiempoOriginal;
 
-            Debug.Log("Punto para el jugador: " + puntosJugador);
-
-            ActualizarMarcadorJugador();
-
-            // ==========================================
-            // SI EL JUGADOR LLEGA A 04, GANA
-            // ==========================================
-
-            if (puntosJugador >= 4)
-            {
-                Debug.Log("🏆 ¡EL JUGADOR GANÓ!");
-
-                SceneManager.LoadScene("GanasteNv2");
-
-                return;
-            }
-        }
-
-        ReiniciarToques();
-
-        StartCoroutine(Respawn(saqueJugador.position));
+        Debug.Log("Introducción terminada. Comienza el partido.");
     }
 
-    // ==========================================
-    // ACTUALIZAR MARCADOR DEL JUGADOR
-    // ==========================================
-
-    void ActualizarMarcadorJugador()
+    public bool IntroduccionActiva()
     {
-        if (marcadorJugador != null &&
-            spritesMarcadorJugador != null &&
-            spritesMarcadorJugador.Length > puntosJugador)
-        {
-            marcadorJugador.sprite = spritesMarcadorJugador[puntosJugador];
-        }
+        return introduccionActiva;
     }
 
-    // ==========================================
-    // PUNTO PARA EL BOT
-    // ==========================================
-
-    public void PuntoBot()
+    void OnDestroy()
     {
-        if (puntoEnProceso)
-            return;
-
-        puntoEnProceso = true;
-
-        // Sumar punto al bot
-        if (puntosBot < 4)
-        {
-            puntosBot++;
-
-            Debug.Log("Punto para el bot: " + puntosBot);
-
-            ActualizarMarcadorBot();
-
-            // ==========================================
-            // SI EL BOT LLEGA A 04, PIERDE EL JUGADOR
-            // ==========================================
-
-            if (puntosBot >= 4)
-            {
-                Debug.Log("❌ ¡EL BOT GANÓ! El jugador perdió.");
-
-                SceneManager.LoadScene("PerdisteNv2");
-
-                return;
-            }
-        }
-
-        ReiniciarToques();
-
-        StartCoroutine(Respawn(saqueBot.position));
+        // Evitar que la escena quede pausada al destruir el GameManager.
+        if (introduccionActiva)
+            Time.timeScale = escalaTiempoOriginal;
     }
 
-    // ==========================================
-    // ACTUALIZAR MARCADOR DEL BOT
-    // ==========================================
+    // Conservá acá las funciones de vidas y daño
+    // que ya tenga tu GameManager3 actual.
+    
+public void ToqueJugador()
+{
+    Debug.Log("El jugador tocó la pelota.");
+}
 
-    void ActualizarMarcadorBot()
-    {
-        if (marcadorBot != null &&
-            spritesMarcadorBot != null &&
-            spritesMarcadorBot.Length > puntosBot)
-        {
-            marcadorBot.sprite = spritesMarcadorBot[puntosBot];
-        }
-    }
+public void ToqueBot()
+{
+    Debug.Log("El bot tocó la pelota.");
+}
 
-    // ==========================================
-    // REINICIAR TOQUES
-    // ==========================================
+public void PuntoBot()
+{
+    Debug.Log("Punto para el bot.");
+}
 
-    void ReiniciarToques()
-    {
-        toquesJugador = 0;
-        toquesBot = 0;
-    }
-
-    // ==========================================
-    // RESPAWN
-    // ==========================================
-
-    IEnumerator Respawn(Vector3 posicionPelota)
-    {
-        pelota.linearVelocity = Vector2.zero;
-        pelota.angularVelocity = 0f;
-        pelota.gravityScale = 0f;
-
-        jugador.position = inicioJugador.position;
-        bot.position = inicioBot.position;
-
-        pelota.transform.position = posicionPelota;
-
-        // Actualizamos el lado de la pelota después del respawn
-        pelotaEnLadoJugador = pelota.transform.position.x < posicionRed;
-
-        yield return new WaitForSeconds(tiempoRespawn);
-
-        pelota.gravityScale = 0.4f;
-
-        puntoEnProceso = false;
-    }
+public void PuntoJugador()
+{
+    Debug.Log("Punto para el jugador.");
+}
 }

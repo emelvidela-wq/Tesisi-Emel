@@ -145,34 +145,320 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_0
+      name: Drake3_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 287
-        width: 142
-        height: 259
+        x: 10
+        y: 288
+        width: 140
+        height: 257
+      alignment: 9
+      pivot: {x: 0.5468329, y: 0.5510243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f2c2918c1704c40b39abb8f1119445
+      internalID: -287288586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Drake3_1
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 290
+        width: 161
+        height: 254
+      alignment: 9
+      pivot: {x: 0.5989018, y: 0.5487063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e217bf98c37e048ac8d9039b82577b
+      internalID: 1511422607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Drake3_2
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 294
+        width: 175
+        height: 251
+      alignment: 9
+      pivot: {x: 0.62217283, y: 0.5418833}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e30c715fd5760241b755c5bd4ae2e23
+      internalID: 850603314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Drake3_3
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 292
+        width: 191
+        height: 253
+      alignment: 9
+      pivot: {x: 0.62198347, y: 0.5229386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bcf52686bc8831498c26b6c17044f9e
+      internalID: 1790959280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Drake3_4
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 294
+        width: 228
+        height: 251
+      alignment: 9
+      pivot: {x: 0.59289175, y: 0.5305847}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391ed103cf3d36241aa6d50dfb0c64f4
+      internalID: 935884649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Drake3_5
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 294
+        width: 133
+        height: 248
+      alignment: 9
+      pivot: {x: 0.51216424, y: 0.49598005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51148832b53b4c45a0994ee4fd77eec
+      internalID: 633507080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Drake3_6
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 295
+        width: 213
+        height: 247
+      alignment: 9
+      pivot: {x: 0.64380187, y: 0.5316171}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f74d233d380184988835ce066930cb
+      internalID: 1387897383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Drake3_7
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 297
+        width: 233
+        height: 244
+      alignment: 9
+      pivot: {x: 0.60853934, y: 0.4279494}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5637c047c1cdc8498d8c1cd2e5e7235
+      internalID: 457907393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Drake3_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 41
+        width: 156
+        height: 247
+      alignment: 9
+      pivot: {x: 0.5480337, y: 0.56214803}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ec5b03f1c0b224dbabbf6949ef345c
+      internalID: 1527575408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Drake3_9
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 44
+        width: 182
+        height: 246
+      alignment: 9
+      pivot: {x: 0.505383, y: 0.5627429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e3fabd01e5f8554591ca115e34a11b5
+      internalID: -442784957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Drake3_10
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 42
+        width: 176
+        height: 251
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 602c9c5b13a838730800000000000000
-      internalID: 4000192840143061510
+      spriteID: 0ef382b8e5ce1e844839f2faf6794515
+      internalID: 346138453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_1
+      name: Drake3_11
       rect:
         serializedVersion: 2
-        x: 176
-        y: 289
-        width: 163
+        x: 619
+        y: 41
+        width: 165
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853c51ae563c8e24ebb5c35ddea5adad
+      internalID: -266543114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Drake3_12
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 42
+        width: 164
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb439bf8aaa96914d924dbcd18ca3ff2
+      internalID: -1301785251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Drake3_13
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 41
+        width: 160
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619c4c8a85fc5334e98f935d576722e5
+      internalID: 1306178213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Drake3_14
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 40
+        width: 168
         height: 252
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -180,318 +466,32 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 86f53bb5c03760810800000000000000
-      internalID: 1731197603685818216
+      spriteID: 3842cb5559ae388469a3cf1cfe0c8ac9
+      internalID: 1499128835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_2
+      name: Drake3_15
       rect:
         serializedVersion: 2
-        x: 345
-        y: 293
+        x: 1393
+        y: 39
         width: 175
-        height: 248
+        height: 255
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5d600f0d5cbb75c20800000000000000
-      internalID: 3195228918930998997
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_3
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 291
-        width: 192
-        height: 247
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c29339e2ee5bd210800000000000000
-      internalID: 1358784041250427585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_4
-      rect:
-        serializedVersion: 2
-        x: 725
-        y: 293
-        width: 237
-        height: 247
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 91bc514f530508b60800000000000000
-      internalID: 7746279551735810841
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_5
-      rect:
-        serializedVersion: 2
-        x: 981
-        y: 293
-        width: 140
-        height: 235
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ee4bb953a37bd3360800000000000000
-      internalID: 7151073243969598702
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_6
-      rect:
-        serializedVersion: 2
-        x: 1123
-        y: 294
-        width: 229
-        height: 239
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ebc158e359f19f350800000000000000
-      internalID: 6050902300208471230
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_7
-      rect:
-        serializedVersion: 2
-        x: 1366
-        y: 296
-        width: 234
-        height: 246
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e16ac21c33631c6a0800000000000000
-      internalID: -6430799196996196834
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_8
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 40
-        width: 158
-        height: 213
-      alignment: 9
-      pivot: {x: 0.43454835, y: 0.12041864}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f2b5e603f91e79590800000000000000
-      internalID: -7667411766746391761
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_9
-      rect:
-        serializedVersion: 2
-        x: 199
-        y: 43
-        width: 176
-        height: 188
-      alignment: 9
-      pivot: {x: 0.37180102, y: 0.15495385}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 17a616ffe4ebf0860800000000000000
-      internalID: 7498421151096466033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_10
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 41
-        width: 178
-        height: 165
-      alignment: 9
-      pivot: {x: 0.46302915, y: 0.16953172}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ce242507ea8cfae10800000000000000
-      internalID: 2211206593596506860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_11
-      rect:
-        serializedVersion: 2
-        x: 621
-        y: 39
-        width: 163
-        height: 151
-      alignment: 9
-      pivot: {x: 0.51153487, y: 0.15757032}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4caddeb71831e2ed0800000000000000
-      internalID: -2436988901509965116
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_12
-      rect:
-        serializedVersion: 2
-        x: 815
-        y: 40
-        width: 161
-        height: 157
-      alignment: 9
-      pivot: {x: 0.44160792, y: 0.14071609}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e4ae893aedbe6fb00800000000000000
-      internalID: 862135720148003406
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_13
-      rect:
-        serializedVersion: 2
-        x: 1001
-        y: 39
-        width: 157
-        height: 177
-      alignment: 9
-      pivot: {x: 0.44610712, y: 0.13882276}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9a0c5f0bff63705b0800000000000000
-      internalID: -5402288756194164567
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_14
-      rect:
-        serializedVersion: 2
-        x: 1183
-        y: 39
-        width: 170
-        height: 213
-      alignment: 9
-      pivot: {x: 0.4502298, y: 0.16896999}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dbb78e715d86f5e70800000000000000
-      internalID: 9106112236004867005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_15
-      rect:
-        serializedVersion: 2
-        x: 1392
-        y: 38
-        width: 177
-        height: 225
-      alignment: 9
-      pivot: {x: 0.5265582, y: 0.1699119}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 62594b5401c1a7c30800000000000000
-      internalID: 4357826445648893222
+      spriteID: 57a5eae41f06e654cbd39bdf7b649a7a
+      internalID: -402001989
       vertices: []
       indices: 
       edges: []
@@ -508,24 +508,28 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      - key: SpriteEditor.SliceOnImport
+        value: False
     nameFileIdTable:
-      WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_0: 4000192840143061510
-      WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_1: 1731197603685818216
-      WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_10: 2211206593596506860
-      WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_11: -2436988901509965116
-      WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_12: 862135720148003406
-      WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_13: -5402288756194164567
-      WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_14: 9106112236004867005
-      WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_15: 4357826445648893222
-      WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_2: 3195228918930998997
-      WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_3: 1358784041250427585
-      WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_4: 7746279551735810841
-      WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_5: 7151073243969598702
-      WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_6: 6050902300208471230
-      WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_7: -6430799196996196834
-      WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_8: -7667411766746391761
-      WhatsApp Image 2026-09-30 at 13.38.01-Photoroom_9: 7498421151096466033
+      Drake3_0: -287288586
+      Drake3_1: 1511422607
+      Drake3_10: 346138453
+      Drake3_11: -266543114
+      Drake3_12: -1301785251
+      Drake3_13: 1306178213
+      Drake3_14: 1499128835
+      Drake3_15: -402001989
+      Drake3_2: 850603314
+      Drake3_3: 1790959280
+      Drake3_4: 935884649
+      Drake3_5: 633507080
+      Drake3_6: 1387897383
+      Drake3_7: 457907393
+      Drake3_8: 1527575408
+      Drake3_9: -442784957
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

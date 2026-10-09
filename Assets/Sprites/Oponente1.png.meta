@@ -150,7 +150,7 @@ TextureImporter:
         serializedVersion: 2
         x: 12
         y: 283
-        width: 243
+        width: 238
         height: 255
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -170,9 +170,9 @@ TextureImporter:
       name: WhatsApp Image 2026-09-30 at 13.38.00_1
       rect:
         serializedVersion: 2
-        x: 252
+        x: 263
         y: 274
-        width: 203
+        width: 192
         height: 261
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -214,9 +214,9 @@ TextureImporter:
       name: WhatsApp Image 2026-09-30 at 13.38.00_3
       rect:
         serializedVersion: 2
-        x: 660
+        x: 664
         y: 276
-        width: 194
+        width: 190
         height: 258
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

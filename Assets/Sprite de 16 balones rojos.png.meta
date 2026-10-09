@@ -1,0 +1,576 @@
+fileFormatVersion: 2
+guid: 660f82524e4e8914eb56a2c7df693d92
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2672212283688725801
+    second: Sprite de 16 balones rojos_0
+  - first:
+      213: -6986016107470961149
+    second: Sprite de 16 balones rojos_1
+  - first:
+      213: -6384358326212324310
+    second: Sprite de 16 balones rojos_2
+  - first:
+      213: 8051673192210219618
+    second: Sprite de 16 balones rojos_3
+  - first:
+      213: -1091975486939643779
+    second: Sprite de 16 balones rojos_4
+  - first:
+      213: 8179370310414857752
+    second: Sprite de 16 balones rojos_5
+  - first:
+      213: 8850583311626553262
+    second: Sprite de 16 balones rojos_6
+  - first:
+      213: -1084692898805776027
+    second: Sprite de 16 balones rojos_7
+  - first:
+      213: 736650673128843871
+    second: Sprite de 16 balones rojos_8
+  - first:
+      213: -825452312058632103
+    second: Sprite de 16 balones rojos_9
+  - first:
+      213: -4735110992916814740
+    second: Sprite de 16 balones rojos_10
+  - first:
+      213: 1720446415210543870
+    second: Sprite de 16 balones rojos_11
+  - first:
+      213: 8491906068727500402
+    second: Sprite de 16 balones rojos_12
+  - first:
+      213: -2761901513998007498
+    second: Sprite de 16 balones rojos_13
+  - first:
+      213: -4311073264928159608
+    second: Sprite de 16 balones rojos_14
+  - first:
+      213: 8425896425932326287
+    second: Sprite de 16 balones rojos_15
+  - first:
+      213: -4129667449002288299
+    second: Sprite de 16 balones rojos_16
+  - first:
+      213: 7602397755215735840
+    second: Sprite de 16 balones rojos_17
+  - first:
+      213: 3536720832713269658
+    second: Sprite de 16 balones rojos_18
+  - first:
+      213: 889096157261302592
+    second: Sprite de 16 balones rojos_19
+  - first:
+      213: -8621333475083066836
+    second: Sprite de 16 balones rojos_20
+  - first:
+      213: -7109645522390566650
+    second: Sprite de 16 balones rojos_21
+  - first:
+      213: -6127260229099727927
+    second: Sprite de 16 balones rojos_22
+  - first:
+      213: -6024324545312097809
+    second: Sprite de 16 balones rojos_23
+  - first:
+      213: -6379908970628168001
+    second: Sprite de 16 balones rojos_24
+  - first:
+      213: -4422944281786771461
+    second: Sprite de 16 balones rojos_25
+  - first:
+      213: -5026867103998862326
+    second: Sprite de 16 balones rojos_26
+  - first:
+      213: -8049070222584824806
+    second: Sprite de 16 balones rojos_27
+  - first:
+      213: -7281033348002198138
+    second: Sprite de 16 balones rojos_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprite de 16 balones rojos_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 362
+        width: 271
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576446e576c37694b801ac08271a226e
+      internalID: -2672212283688725801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite de 16 balones rojos_1
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 362
+        width: 271
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9251efba6a39142a85b6c378059d14
+      internalID: -6986016107470961149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite de 16 balones rojos_2
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 362
+        width: 271
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9a51f72ed276a4abc95f5fd6c1c4f3
+      internalID: -6384358326212324310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite de 16 balones rojos_3
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 362
+        width: 271
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2d5ca7c9757c14995fbb021d5c3c2a
+      internalID: 8051673192210219618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite de 16 balones rojos_4
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 362
+        width: 271
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a3df31769477c4a9a9dd051bf1d704
+      internalID: -1091975486939643779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite de 16 balones rojos_5
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 362
+        width: 271
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cbe93611e8867c4f85e4e7435c1d6bd
+      internalID: 8179370310414857752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite de 16 balones rojos_6
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 362
+        width: 271
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8875eb4cb73bf46b6c89d7b08b1f98
+      internalID: 8850583311626553262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite de 16 balones rojos_7
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 362
+        width: 271
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c12e39e85a73b243955b555e00e72f2
+      internalID: -1084692898805776027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite de 16 balones rojos_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 81
+        width: 268
+        height: 271
+      alignment: 9
+      pivot: {x: 0.6861861, y: 0.5421498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f0221a7a356b748ab45e5959dff07c
+      internalID: 736650673128843871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite de 16 balones rojos_9
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 80
+        width: 263
+        height: 282
+      alignment: 9
+      pivot: {x: 0.6933862, y: 0.5702496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b1a13e0f25d884a88e3d7a4b5340e4
+      internalID: -825452312058632103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite de 16 balones rojos_10
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 73
+        width: 264
+        height: 289
+      alignment: 9
+      pivot: {x: 0.65893924, y: 0.56673706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dffe85b1f2aa0654085853b31ee558a0
+      internalID: -4735110992916814740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite de 16 balones rojos_11
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 108
+        width: 283
+        height: 254
+      alignment: 9
+      pivot: {x: 0.67971945, y: 0.5702495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683f5d2bb20f57f4b86ca8bc8f56142f
+      internalID: 1720446415210543870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite de 16 balones rojos_12
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 109
+        width: 280
+        height: 253
+      alignment: 9
+      pivot: {x: 0.6907275, y: 0.55971223}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d166267705855b4f846f4473812ebcc
+      internalID: 8491906068727500402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite de 16 balones rojos_13
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 91
+        width: 287
+        height: 271
+      alignment: 9
+      pivot: {x: 0.6905054, y: 0.5245873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06e6438d11dace4c93eef7c86a26544
+      internalID: -2761901513998007498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite de 16 balones rojos_14
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 91
+        width: 271
+        height: 271
+      alignment: 9
+      pivot: {x: 0.72990435, y: 0.5526873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b308ff9d5ee914a9d0b7beb7d6444b
+      internalID: -4311073264928159608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite de 16 balones rojos_15
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 81
+        width: 234
+        height: 281
+      alignment: 9
+      pivot: {x: 0.6521466, y: 0.52809995}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b8cd6cada427441bc9ce4ae867d587
+      internalID: 8425896425932326287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 45569ba9ae4a095438f3da6f0309e673
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceOnImport
+        value: False
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":2.0},"gridSpriteSize":{"x":271.0,"y":362.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Sprite de 16 balones rojos_0: -2672212283688725801
+      Sprite de 16 balones rojos_1: -6986016107470961149
+      Sprite de 16 balones rojos_10: -4735110992916814740
+      Sprite de 16 balones rojos_11: 1720446415210543870
+      Sprite de 16 balones rojos_12: 8491906068727500402
+      Sprite de 16 balones rojos_13: -2761901513998007498
+      Sprite de 16 balones rojos_14: -4311073264928159608
+      Sprite de 16 balones rojos_15: 8425896425932326287
+      Sprite de 16 balones rojos_2: -6384358326212324310
+      Sprite de 16 balones rojos_3: 8051673192210219618
+      Sprite de 16 balones rojos_4: -1091975486939643779
+      Sprite de 16 balones rojos_5: 8179370310414857752
+      Sprite de 16 balones rojos_6: 8850583311626553262
+      Sprite de 16 balones rojos_7: -1084692898805776027
+      Sprite de 16 balones rojos_8: 736650673128843871
+      Sprite de 16 balones rojos_9: -825452312058632103
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
