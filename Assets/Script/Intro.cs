@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class Intro : MonoBehaviour
@@ -52,7 +51,7 @@ public class Intro : MonoBehaviour
         if (!introduccionActiva)
             return;
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.Space))
             AvanzarDialogo();
     }
 

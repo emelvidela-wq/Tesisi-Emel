@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MarcadorVidasLuke : MonoBehaviour
 {
@@ -12,7 +13,11 @@ public class MarcadorVidasLuke : MonoBehaviour
     [Header("Vidas actuales")]
     public int vidas = 3;
 
+    [Header("Escena al ganar")]
+    public string escenaGanar = "GanasteNv3";
+
     private SpriteRenderer spriteRenderer;
+    private bool yaGano = false;
 
     void Awake()
     {
@@ -25,18 +30,9 @@ public class MarcadorVidasLuke : MonoBehaviour
         ActualizarSprite();
     }
 
-    void Update()
-    {
-        // PRUEBA TEMPORAL: presionar P para quitar una vida
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            PerderVida();
-        }
-    }
-
     public void PerderVida()
     {
-        if (vidas <= 0)
+        if (vidas <= 0 || yaGano)
             return;
 
         vidas--;
@@ -44,6 +40,17 @@ public class MarcadorVidasLuke : MonoBehaviour
         ActualizarSprite();
 
         Debug.Log("Luke tiene " + vidas + " vidas.");
+
+        if (vidas == 0)
+        {
+            yaGano = true;
+
+            Debug.Log(
+                "Luke perdió. Cargando la escena " + escenaGanar
+            );
+
+            SceneManager.LoadScene(escenaGanar);
+        }
     }
 
     void ActualizarSprite()

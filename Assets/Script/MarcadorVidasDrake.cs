@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MarcadorVidasDrake : MonoBehaviour
 {
@@ -12,7 +13,11 @@ public class MarcadorVidasDrake : MonoBehaviour
     [Header("Vidas actuales")]
     public int vidas = 3;
 
+    [Header("Escena al perder")]
+    public string escenaPerder = "PerdisteNv3";
+
     private SpriteRenderer spriteRenderer;
+    private bool yaPerdio = false;
 
     void Awake()
     {
@@ -25,18 +30,9 @@ public class MarcadorVidasDrake : MonoBehaviour
         ActualizarSprite();
     }
 
-    void Update()
-    {
-        // PRUEBA TEMPORAL: presionar O para quitar una vida
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            PerderVida();
-        }
-    }
-
     public void PerderVida()
     {
-        if (vidas <= 0)
+        if (vidas <= 0 || yaPerdio)
             return;
 
         vidas--;
@@ -44,6 +40,13 @@ public class MarcadorVidasDrake : MonoBehaviour
         ActualizarSprite();
 
         Debug.Log("Drake tiene " + vidas + " vidas.");
+
+        if (vidas == 0)
+        {
+            yaPerdio = true;
+            Debug.Log("Drake perdió. Cargando " + escenaPerder);
+            SceneManager.LoadScene(escenaPerder);
+        }
     }
 
     void ActualizarSprite()

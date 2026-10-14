@@ -5466,7 +5466,7 @@ Transform:
   m_GameObject: {fileID: 1328849792}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -324.09, y: 4210.01, z: -0.52}
+  m_LocalPosition: {x: -322, y: 4210.01, z: -0.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5647,6 +5647,9 @@ MonoBehaviour:
   fuerzaHorizontal: 3.8
   fuerzaVertical: 5.8
   velocidadMaxima: 10
+  zonaJugador: {fileID: 1116393700}
+  zonaBot: {fileID: 1391884811}
+  lineaCentral: {fileID: 0}
   audioSource: {fileID: 1338015092}
   sonidoGolpe: {fileID: 8300000, guid: 807b9cd9d9920fb48b2093c83e445436, type: 3}
   sonidoSilbato: {fileID: 8300000, guid: eafff277b78d81b40979367041add225, type: 3}
@@ -6746,7 +6749,7 @@ Transform:
   m_GameObject: {fileID: 1854041156}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -336.97, y: 4210.01, z: -0.52}
+  m_LocalPosition: {x: -337, y: 4210.01, z: -0.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6796,30 +6799,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b361ea266045c443bb76180c8bc326d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  pelota: {fileID: 1338015086}
-  saqueJugador: {fileID: 890076758}
-  saqueBot: {fileID: 2091054148}
-  jugador: {fileID: 361518282}
-  bot: {fileID: 925953863}
-  inicioJugador: {fileID: 1854041157}
-  inicioBot: {fileID: 1328849793}
-  tiempoRespawn: 1
-  maximoToques: 3
-  posicionRed: -329.89
   marcadorJugador: {fileID: 1223340474}
-  spritesMarcadorJugador:
+  numerosJugador:
   - {fileID: 7351565156172741748, guid: 34ae8c4cae736de4aa4caeb24dc7f4f3, type: 3}
   - {fileID: -3047135198596784925, guid: 34ae8c4cae736de4aa4caeb24dc7f4f3, type: 3}
   - {fileID: -2495672165377708221, guid: 34ae8c4cae736de4aa4caeb24dc7f4f3, type: 3}
   - {fileID: -3056145757880911377, guid: 34ae8c4cae736de4aa4caeb24dc7f4f3, type: 3}
   - {fileID: 4434319580830148114, guid: 34ae8c4cae736de4aa4caeb24dc7f4f3, type: 3}
   marcadorBot: {fileID: 999618471}
-  spritesMarcadorBot:
+  numerosBot:
   - {fileID: 5455185064031384995, guid: e3c9bfdc82cf93640942db24dcebad0d, type: 3}
   - {fileID: 3566255365989770182, guid: e3c9bfdc82cf93640942db24dcebad0d, type: 3}
   - {fileID: -357177411183496665, guid: e3c9bfdc82cf93640942db24dcebad0d, type: 3}
   - {fileID: 7453866070098926212, guid: e3c9bfdc82cf93640942db24dcebad0d, type: 3}
   - {fileID: -4172843745158961048, guid: e3c9bfdc82cf93640942db24dcebad0d, type: 3}
+  saqueJugador: {fileID: 1223340475}
+  saqueBot: {fileID: 999618472}
+  pelota: {fileID: 1338015090}
+  inicioJugador: {fileID: 1854041157}
+  inicioBot: {fileID: 1328849793}
+  jugador: {fileID: 361518282}
+  bot: {fileID: 925953863}
+  escenaVictoria: GanasteNv2
+  escenaDerrota: PerdisteNv2
+  entrenadorSquare: {fileID: 0}
+  spriteEntrenador: {fileID: 0}
+  spritesIntroduccion:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &2091054147
 GameObject:
   m_ObjectHideFlags: 0
@@ -6845,7 +6858,7 @@ Transform:
   m_GameObject: {fileID: 2091054147}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -325.6, y: 4216.81, z: -0.0593}
+  m_LocalPosition: {x: -323, y: 4216.81, z: -0.0593}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

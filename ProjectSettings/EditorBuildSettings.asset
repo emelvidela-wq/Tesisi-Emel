@@ -29,5 +29,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PerdisteNv2.unity
     guid: a832a798b63444242be4818161744460
+  - enabled: 1
+    path: Assets/Scenes/GanasteNv3.unity
+    guid: d510e7bc80908b4429999880bf675482
+  - enabled: 1
+    path: Assets/Scenes/PerdisteNv3.unity
+    guid: 252f3311e5172e14b9572a8c8d8a3a27
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
