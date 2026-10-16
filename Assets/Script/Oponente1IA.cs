@@ -498,6 +498,7 @@ public class Oponente1IA : MonoBehaviour
         if (pelotaScript != null)
         {
             pelotaScript.RegistrarLanzamientoLuke();
+            pelotaScript.ReproducirSonidoLanzamiento();
             pelotaScript.ActivarModoQuemado(direccion);
         }
 

@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using System.Collections;
 
@@ -5,6 +6,8 @@ public class DrakeController : MonoBehaviour
 {
     public PlayerSoundController playerSoundController;
 
+    [Header("Animacion de la barra de energia")]
+    public AnimacionBarraEnergia animacionBarra;
 
     [Header("Movimiento")]
     public float speed = 5f;
@@ -22,7 +25,6 @@ public class DrakeController : MonoBehaviour
     private Animator anim;
 
     private float move;
-
     private bool isGrounded = false;
     private bool canDash = true;
     private bool isDashing = false;
@@ -32,42 +34,60 @@ public class DrakeController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
 
-        rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+        rb.collisionDetectionMode =
+            CollisionDetectionMode2D.Continuous;
+
         rb.freezeRotation = true;
     }
 
     void Update()
     {
-        // 🔒 BLOQUEO POR DIALOGO
         if (!canMove)
         {
             move = 0f;
             anim.SetFloat("Speed", 0f);
             anim.SetBool("isJumping", false);
+
+            if (playerSoundController != null)
+                playerSoundController.StopCorrer();
+
             return;
         }
 
         HandleInput();
 
-        if (move != 0 && isGrounded)
+        if (playerSoundController != null)
         {
-            playerSoundController.PlayCorrer();
+            if (move != 0 && isGrounded && !isDashing)
+                playerSoundController.PlayCorrer();
+            else
+                playerSoundController.StopCorrer();
         }
-        else
-        {
-            playerSoundController.StopCorrer();
-        }
+
         Jump();
 
+        // Al presionar Shift, iniciar el dash
+        // y reproducir la animacion de la barra.
         if ((Input.GetKeyDown(KeyCode.LeftShift) ||
              Input.GetKeyDown(KeyCode.RightShift)) &&
-             canDash &&
-             isGrounded)
+             canDash && isGrounded && !isDashing)
         {
+            if (animacionBarra != null)
+            {
+                animacionBarra.ReproducirDash(
+                    dashDuration,
+                    dashCooldown
+                );
+            }
+
             StartCoroutine(Dash());
         }
 
-        anim.SetFloat("Speed", isDashing ? 1 : Mathf.Abs(move));
+        anim.SetFloat(
+            "Speed",
+            isDashing ? 1f : Mathf.Abs(move)
+        );
+
         anim.SetBool("isJumping", !isGrounded);
     }
 
@@ -85,13 +105,15 @@ public class DrakeController : MonoBehaviour
     {
         move = 0f;
 
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D) ||
+            Input.GetKey(KeyCode.RightArrow))
         {
             move = 1f;
             transform.localScale = new Vector3(1, 1, 1);
         }
 
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A) ||
+            Input.GetKey(KeyCode.LeftArrow))
         {
             move = -1f;
             transform.localScale = new Vector3(-1, 1, 1);
@@ -102,17 +124,22 @@ public class DrakeController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            playerSoundController.playSaltar();
+            if (playerSoundController != null)
+                playerSoundController.playSaltar();
 
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            rb.linearVelocity = new Vector2(
+                rb.linearVelocity.x,
+                jumpForce
+            );
+
             isGrounded = false;
         }
     }
 
     IEnumerator Dash()
     {
-
-         playerSoundController.PlayDash();
+        if (playerSoundController != null)
+            playerSoundController.PlayDash();
 
         canDash = false;
         isDashing = true;
@@ -128,7 +155,7 @@ public class DrakeController : MonoBehaviour
 
             rb.linearVelocity = new Vector2(
                 direction * dashSpeed,
-                rb.linearVelocity.y
+                0f
             );
 
             timer += Time.deltaTime;
@@ -138,6 +165,9 @@ public class DrakeController : MonoBehaviour
         rb.gravityScale = originalGravity;
         isDashing = false;
 
+        anim.SetFloat("Speed", Mathf.Abs(move));
+        anim.SetBool("isJumping", !isGrounded);
+
         yield return new WaitForSeconds(dashCooldown);
 
         canDash = true;
@@ -146,20 +176,18 @@ public class DrakeController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
-        {
             isGrounded = true;
+
+        if (collision.gameObject.CompareTag("Valla") &&
+            playerSoundController != null)
+        {
+            playerSoundController.PlayValla();
         }
-        if (collision.gameObject.CompareTag("Valla"))
-    {
-        playerSoundController.PlayValla();
-    }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
-        {
             isGrounded = false;
-        }
     }
 }

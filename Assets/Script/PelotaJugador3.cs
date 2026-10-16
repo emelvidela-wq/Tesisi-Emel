@@ -14,6 +14,10 @@ public class PelotaJugador3 : MonoBehaviour
     [Header("Lanzamiento")]
     public float velocidadLanzamiento = 6f;
 
+    [Header("Sonido de lanzamiento")]
+    public AudioClip sonidoLanzamiento;
+    public AudioSource audioSource;
+
     [Header("Modo Quemado 🔥")]
     public float velocidadQuemada = 8f;
     public float duracionModoQuemado = 2f;
@@ -59,6 +63,9 @@ public class PelotaJugador3 : MonoBehaviour
 
         if (spriteRenderer == null)
             spriteRenderer = GetComponent<SpriteRenderer>();
+
+        if (audioSource == null)
+            audioSource = GetComponent<AudioSource>();
 
         gameManager = FindFirstObjectByType<GameManager3>();
 
@@ -166,12 +173,20 @@ public class PelotaJugador3 : MonoBehaviour
 
         ultimoLanzador = Lanzador.Drake;
 
+        ReproducirSonidoLanzamiento();
+
         ActivarModoQuemado(ultimaDireccion);
     }
 
     public void RegistrarLanzamientoLuke()
     {
         ultimoLanzador = Lanzador.Luke;
+    }
+
+    public void ReproducirSonidoLanzamiento()
+    {
+        if (audioSource != null && sonidoLanzamiento != null)
+            audioSource.PlayOneShot(sonidoLanzamiento);
     }
 
     public void ActivarModoQuemado(Vector2 direccion)

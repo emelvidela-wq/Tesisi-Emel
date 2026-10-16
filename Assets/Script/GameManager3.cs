@@ -10,10 +10,28 @@ public class GameManager3 : MonoBehaviour
     public MarcadorVidasDrake marcadorDrake;
     public MarcadorVidasLuke marcadorLuke;
 
+    [Header("Sonido al perder un corazón")]
+    public AudioSource audioSource;
+    public AudioClip sonidoPerderCorazon;
+
     void Awake()
     {
         nivelIniciado = false;
         Debug.Log("GameManager3 iniciado.");
+    }
+
+    void Start()
+    {
+        if (audioSource == null)
+            audioSource = GetComponent<AudioSource>();
+    }
+
+    void ReproducirSonidoPerderCorazon()
+    {
+        if (audioSource != null && sonidoPerderCorazon != null)
+        {
+            audioSource.PlayOneShot(sonidoPerderCorazon);
+        }
     }
 
     public void IniciarNivel()
@@ -33,6 +51,8 @@ public class GameManager3 : MonoBehaviour
         }
 
         marcadorDrake.PerderVida();
+        ReproducirSonidoPerderCorazon();
+
         Debug.Log("Drake perdió una vida en el nivel 3.");
     }
 
@@ -47,6 +67,8 @@ public class GameManager3 : MonoBehaviour
         }
 
         marcadorLuke.PerderVida();
+        ReproducirSonidoPerderCorazon();
+
         Debug.Log("Luke perdió una vida en el nivel 3.");
     }
 }
